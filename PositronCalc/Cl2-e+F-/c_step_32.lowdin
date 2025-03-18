@@ -1,0 +1,31 @@
+
+GEOMETRY
+	e-(F)	AUG-CC-PVTZ 0.0 0.0 17.5  multiplicity=2 addParticles=2 
+	e-(Cl)	AUG-CC-PVTZ -1.325 0.0 0.0
+	e-(Cl)	AUG-CC-PVTZ 1.325 0.0 0.0 
+	F	Dirac 0.0 0.0 17.5
+	Cl	Dirac -1.325 0.0 0.0
+	Cl	Dirac 1.325 0.0 0.0
+	E+	PSX-TZ 0.0 0.0 17.5 addParticles=-1		
+	E+	PSX-TZ 0.0 0.0 0.0 
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+	mollerPlessetCorrection=2
+END TASKS
+
+CONTROL
+	buildMixedDensityMatrix=true
+	!convergenceMethod=4
+	!iterationScheme=1
+	scfNonelectronicTypeGuess = "ones"
+	!nonelectronicLevelShifting=-0.1
+	!activateLevelShifting=true
+	units="ANGS"
+END CONTROL
+
+
+
+
+
