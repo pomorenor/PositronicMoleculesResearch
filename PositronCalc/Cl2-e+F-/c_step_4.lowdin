@@ -1,29 +1,30 @@
 
 GEOMETRY
 	e-(F)	AUG-CC-PVTZ 0.0 0.0 3.5  multiplicity=2 addParticles=2 
-	e-(Cl)	AUG-CC-PVTZ -1.325 0.0 0.0
-	e-(Cl)	AUG-CC-PVTZ 1.325 0.0 0.0 
+	e-(Cl)	AUG-CC-PVTZ -0.8 0.0 0.0
+	e-(Cl)	AUG-CC-PVTZ 0.8 0.0 0.0 
 	F	Dirac 0.0 0.0 3.5
-	Cl	Dirac -1.325 0.0 0.0
-	Cl	Dirac 1.325 0.0 0.0
-	E+	PSX-TZ 0.0 0.0 3.5 addParticles=-1		
-	E+	PSX-TZ 0.0 0.0 0.0 
+	Cl	Dirac -0.8 0.0 0.0
+	Cl	Dirac 0.8 0.0 0.0
+	E+	PSX-TZ 0.0 0.0 3.5 
+	E+	PSX-TZ 0.0 0.0 0.0
+	E+	PSX-TZ -0.8 0.0 0.0
+	E+	PSX-TZ 0.8 0.0 0.0 addParticles=-3
 END GEOMETRY
 
 TASKS
         method = "UHF"
-	mollerPlessetCorrection=2
 END TASKS
 
 CONTROL
-	buildMixedDensityMatrix=true
-	!convergenceMethod=4
-	!iterationScheme=1
-	scfNonelectronicTypeGuess = "ones"
-	!nonelectronicLevelShifting=-0.1
-	!activateLevelShifting=true
+	readCoefficients=F
+	iterationScheme=0
+	convergenceMethod=1
+	scfNonElectronicTypeGuess="ONES"
 	units="ANGS"
 END CONTROL
+
+
 
 
 

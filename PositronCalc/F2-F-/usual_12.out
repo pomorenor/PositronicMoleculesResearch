@@ -1,0 +1,91 @@
+Begin job by input: usual_12.lowdin, for user:   at  mar 18 feb 2025 16:34:40 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f31d3924f6ee2ce9d77f07edcc1ba27359319d14
+  compilation date:  mar 17 sep 2024 16:16:17 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	e-(F)	AUG-CC-PVTZ -0.95 0.0 0.0 multiplicity=2 addParticles=2 
+	e-(F)	AUG-CC-PVTZ 0.95 0.0 0.0 
+	e-(F)	AUG-CC-PVTZ 0.0 0.0 2.9
+	F	Dirac -0.95 0.0 0.0
+	F	Dirac 0.95 0.0 0.0
+	F	Dirac 0.0 0.0 2.9
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+	mollerPlessetCorrection=2
+END TASKS
+
+CONTROL
+	units="ANGS"
+END CONTROL
+
+
+
+
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Tue Feb 18 16:34:40 2025
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... DONE!
+ 
+ LOWDIN IS RUNNING WITH NEXT PARAMETERS: 
+ ----------------------------------------
+ 
+         METHOD TYPE:  UHF
+         NUMBER OF CORES:     4
+         MOLLER PLESSET CORRECTION:      2
+         NONELECTRONIC DENSITY GUESS: HCORE
+         ELECTRONIC DENSITY GUESS: HCORE
+         CRITERIUM OF CONVERGENCE: ENERGY
+         NONELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         ELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         TOTAL ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         SCHEME OF ITERATION: GLOBAL ITERATIONS
+         SCF MAX. SUBITERATIONS - NONELECTRONS :     1
+         SCF MAX. SUBITERATIONS - ELECTRONS :     1
+         SCF MAX. ITERATIONS - INTERSPECIES :   200
+         INTEGRAL STORAGE: DISK
+         STACK SIZE FOR ERIS : 30000
+         METHOD OF SCF CONVERGENCE: DAMPING
+ 
+ ### ERROR ###
+    Debug description: In ConstantsOfCoupling at load function.
+    Description: Elemental particle: E-ALPHA NOT found!!
+ ###
+ 
+
+ Elapsed Time :   2.73E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Tue Feb 18 16:34:40 2025
+-rw-rw-r-- 1 pohl pohl    0 feb 18 15:40 2
+-rw-rw-r-- 1 pohl pohl   64 feb 18 15:40 gepol.inp
+-rw-rw-r-- 1 pohl pohl  264 feb 18 15:40 gepol.xyzr
+-rw-rw-r-- 1 pohl pohl  19K feb 18 15:40 lowdin.bas
+-rw-rw-r-- 1 pohl pohl  16K feb 18 15:40 lowdin.dat
+-rw-rw-r-- 1 pohl pohl 852K feb 18 15:40 lowdin.opints
+-rw-rw-r-- 1 pohl pohl  69K feb 18 15:40 lowdin.sys
+-rw-rw-r-- 1 pohl pohl  316 feb 18 16:34 usual_12
+-rw-rw-r-- 1 pohl pohl 1.5K feb 18 16:34 usual_12.aux
+-rw-rw-r-- 1 pohl pohl  324 feb 18 16:34 usual_12.lowdin
+-rw-rw-r-- 1 pohl pohl 2.6K feb 18 16:34 usual_12.out
+-rw-rw-r-- 1 pohl pohl 651K feb 18 16:34 usual_12.vec

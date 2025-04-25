@@ -1,0 +1,24 @@
+
+GEOMETRY
+	e-(F)	AUG-CC-PVTZ 0.0 0.0 0.0  multiplicity=1 addParticles=1 
+	F	Dirac 0.0 0.0 0.0
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+END TASKS
+
+CONTROL
+	readCoefficients=F
+	iterationScheme=1
+	convergenceMethod=1
+	scfNonElectronicTypeGuess="ONES"
+	units="ANGS"
+END CONTROL
+
+
+
+
+
+
+

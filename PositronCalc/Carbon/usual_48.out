@@ -1,0 +1,87 @@
+Begin job by input: usual_48.lowdin, for user:   at  lun 03 feb 2025 17:01:44 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f31d3924f6ee2ce9d77f07edcc1ba27359319d14
+  compilation date:  mar 17 sep 2024 16:16:17 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	C	Dirac -0.645 0.0 0.0
+	e-(C)	STO-3G -0.645 0.0 0.0	addParticles=1
+	E+	PSX-TZ -0.645 0.0 0.0
+	C	Dirac 0.645 0.0 0.0
+	e-(C)	STO-3G 0.645 0.0 0.0	addParticles=1
+	E+	PSX-TZ 0.645 0.0 0.0	addParticles=-1
+	C	Dirac 0.0 0.0 8
+	e-(C)	STO-3G 0.0 0.0 8	addParticles=1
+	E+	PSX-TZ	0.0 0.0 8	addParticles=-1		
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+	mollerPlessetCorrection=2
+END TASKS
+
+CONTROL
+	units="ANGS"
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	HFprintEigenvalues=T
+	totalEnergyTolerance=1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Mon Feb  3 17:01:44 2025
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... DONE!
+ 
+ LOWDIN IS RUNNING WITH NEXT PARAMETERS: 
+ ----------------------------------------
+ 
+         METHOD TYPE:  UHF
+         NUMBER OF CORES:     4
+         MOLLER PLESSET CORRECTION:      2
+         NONELECTRONIC DENSITY GUESS: HCORE
+         ELECTRONIC DENSITY GUESS: HCORE
+         CRITERIUM OF CONVERGENCE: ENERGY
+         NONELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         ELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         TOTAL ENERGY TOLERANCE IN SCFs:     0.10000E-08
+         SCHEME OF ITERATION: GLOBAL ITERATIONS
+         SCF MAX. SUBITERATIONS - NONELECTRONS :     1
+         SCF MAX. SUBITERATIONS - ELECTRONS :     1
+         SCF MAX. ITERATIONS - INTERSPECIES :   200
+         INTEGRAL STORAGE: DISK
+         STACK SIZE FOR ERIS : 30000
+         METHOD OF SCF CONVERGENCE: DAMPING
+ species E-ALPHAhas fractional ocupation number    10.500000000000000      please check your input addParticles and multiplicity
+ 
+ ### ERROR ###
+    Debug description: MolecularSystem module at build function.
+    Description: Fractional ocupation number, imposible combination of charge and multiplicity
+ ###
+ 
+
+ Elapsed Time :   1.70E-01 (s)
+ lowdin execution terminated ABNORMALLY at : Mon Feb  3 17:01:44 2025
+-rw-rw-r-- 1 pohl pohl  518 feb  3 17:01 usual_48
+-rw-rw-r-- 1 pohl pohl 2.2K feb  3 17:01 usual_48.aux
+-rw-rw-r-- 1 pohl pohl  522 feb  3 17:01 usual_48.lowdin
+-rw-rw-r-- 1 pohl pohl 3.0K feb  3 17:01 usual_48.out

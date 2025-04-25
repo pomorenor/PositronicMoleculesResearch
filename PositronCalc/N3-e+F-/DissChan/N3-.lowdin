@@ -1,0 +1,28 @@
+
+GEOMETRY
+	e-(N)	AUG-CC-PVTZ -1.1876 0.0 0.0 multiplicity=1 addParticles=1
+	e-(N)	AUG-CC-PVTZ 0.0 0.0 0.0
+	e-(N)	AUG-CC-PVTZ 1.1876 0.0 0.0 
+	N	Dirac -1.1876 0.0 0.0
+	N	Dirac 0.0 0.0 0.0
+	N	Dirac 1.1876 0.0 0.0
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+END TASKS
+
+CONTROL
+	readCoefficients=F
+	iterationScheme=0
+	convergenceMethod=1
+	scfNonElectronicTypeGuess="ONES"
+	units="ANGS"
+END CONTROL
+
+
+
+
+
+
+

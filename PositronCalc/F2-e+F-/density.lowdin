@@ -1,0 +1,36 @@
+
+GEOMETRY
+	e-(F)	AUG-CC-PVTZ 0.0 0.0 4.0  multiplicity=2 addParticles=2 
+	e-(F)	AUG-CC-PVTZ -0.95 0.0 0.0
+	e-(F)	AUG-CC-PVTZ 0.95 0.0 0.0 
+	F	Dirac 0.0 0.0 4.0
+	F	Dirac -0.95 0.0 0.0
+	F	Dirac 0.95 0.0 0.0
+	E+	PSX-TZ 0.0 0.0 4.0 addParticles=-3
+	E+	PSX-TZ 0.0 0.0 0.0
+	E+	PSX-TZ -0.95 0.0 0.0
+	E+	PSX-TZ 0.95 0.0 0.0
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+END TASKS
+
+OUTPUTS
+	wfnFile
+END OUTPUTS
+
+CONTROL
+	readCoefficients=F
+	iterationScheme=1
+	convergenceMethod=1
+	scfNonElectronicTypeGuess="ONES"
+	units="ANGS"
+END CONTROL
+
+
+
+
+
+
+

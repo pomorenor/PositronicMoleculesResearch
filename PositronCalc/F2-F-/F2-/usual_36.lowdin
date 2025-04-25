@@ -1,0 +1,21 @@
+
+GEOMETRY
+	e-(F)	AUG-CC-PVTZ 0.0 0.0 0.0 multiplicity=2 addParticles=1 
+	e-(F)	AUG-CC-PVTZ 0.0 0.0 7.7 
+	F	Dirac 0.0 0.0 0.0
+	F	Dirac 0.0 0.0 7.7
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+	mollerPlessetCorrection=2
+END TASKS
+
+CONTROL
+	units="ANGS"
+END CONTROL
+
+
+
+
+

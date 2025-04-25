@@ -1,0 +1,19 @@
+
+GEOMETRY
+	F	Dirac -0.645 0.0 0.0 
+	e-(F)	AUG-CC-PVTZ -0.645 0.0 0.0 multiplicity=1 addParticles=1 
+	E+	PSX-TZ -0.645 0.0 0.0
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+END TASKS
+
+CONTROL
+	units="ANGS"
+END CONTROL
+
+
+
+
+

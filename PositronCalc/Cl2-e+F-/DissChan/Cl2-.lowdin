@@ -1,0 +1,26 @@
+
+GEOMETRY
+	e-(Cl)	AUG-CC-PVTZ -0.8 0.0 0.0 multiplicity=2 addParticles=1
+	e-(Cl)	AUG-CC-PVTZ 0.8 0.0 0.0 
+	Cl	Dirac -0.8 0.0 0.0
+	Cl	Dirac 0.8 0.0 0.0
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+END TASKS
+
+CONTROL
+	readCoefficients=F
+	iterationScheme=0
+	convergenceMethod=1
+	scfNonElectronicTypeGuess="ONES"
+	units="ANGS"
+END CONTROL
+
+
+
+
+
+
+

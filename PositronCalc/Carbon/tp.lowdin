@@ -1,0 +1,26 @@
+
+GEOMETRY
+	C	Dirac -0.645 0.0 0.0
+	e-(C)	AUG-CC-PVTZ -0.645 0.0 0.0	addParticles=1
+	E+	PSX-TZ -0.645 0.0 0.0
+	C	Dirac 0.645 0.0 0.0
+	e-(C)	AUG-CC-PVTZ 0.645 0.0 0.0	addParticles=1
+	E+	PSX-TZ 0.645 0.0 0.0	addParticles=-1
+	C	Dirac 0.0 0.0 POS
+	e-(C)	AUG-CC-PVTZ 0.0 0.0 POS	
+	E+	PSX-TZ	0.0 0.0 POS	addParticles=-1		
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+	mollerPlessetCorrection=2
+END TASKS
+
+CONTROL
+	units="ANGS"
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	HFprintEigenvalues=T
+	totalEnergyTolerance=1E-9
+END CONTROL
+

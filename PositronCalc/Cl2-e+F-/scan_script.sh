@@ -13,7 +13,7 @@ DATA_FILE=$1
 #DATA_RESULTS=$5
 #TEMPLATE_ONLY_P="/home/pohl/Desktop/PositronWork/Be_OCT28/template_posi.lowdin"
 TEMPLATE_USUAL_CALC="template_usual.lowdin"
-
+TEMPLATE_WFN_CALC="/home/pohl/Desktop/PositronMoleculeSystems/PositronicMoleculesResearch/PositronCalc/F2-e+F-/template_nowfn.lowdin"
 
 
 
@@ -29,26 +29,44 @@ for STEP in "${!DIST[@]}"; do
 
 	echo -e "T$STEP \n"
 
-    	#WFN_FILE="c_guess_$STEP.vec"
+    	WFN_FILE="c_step_$STEP.vec"
+	LOWDIN_FILE_NOW="c_step_nw_$STEP.lowdin"
 	LOWDIN_FILE_USUAL="c_step_$STEP.lowdin"
 	LOWDIN_OUTPUT_USUAL="c_step_$STEP.out"
 
-	#echo -e "Renaming wave function file \n" 
-	#cp lowdin.wfn WFN_FILE
+
 
 	
+	#echo -e "Editing LOWDIN files \n"
+	
+	
+	#sed "3s|POS|"${DIST[$STEP]}"|g" $TEMPLATE_WFN_CALC > $LOWDIN_FILE_NOW
+	#sed -i "6s|POS|"${DIST[$STEP]}"|g" $LOWDIN_FILE_NOW
+	#sed -i "9s|POS|"${DIST[$STEP]}"|g" $LOWDIN_FILE_NOW
+	
+
+	#echo -e "Running LOWDIN calculations fow wfn \n"
+
+
+	#openlowdin -i $LOWDIN_FILE_NOW -n 9 -w
+
+
+	#echo -e "Renaming wave function file \n"
+	#cp lowdin.wfn $WFN_FILE
+	#mv lowdin.wfn auxiliary
+	#mv auxiliary lowdin.wfn
+
 	echo -e "Editing LOWDIN files \n"
 	
-	
+
 	sed "3s|POS|"${DIST[$STEP]}"|g" $TEMPLATE_USUAL_CALC > $LOWDIN_FILE_USUAL
 	sed -i "6s|POS|"${DIST[$STEP]}"|g" $LOWDIN_FILE_USUAL
 	sed -i "9s|POS|"${DIST[$STEP]}"|g" $LOWDIN_FILE_USUAL
-	
-
-	echo -e "Running LOWDIN calculations \n"
 
 
-	lowdin2 -i $LOWDIN_FILE_USUAL -n 5
+	echo -e "Running LOWDIN calculations"
+
+	openlowdin -i $LOWDIN_FILE_USUAL -n 9 
 	
 	echo -e "Extracting total Energy \n"
 	ENERGY_USUAL=$(awk '/E\(MP/ {print $3}' $LOWDIN_OUTPUT_USUAL)
@@ -58,5 +76,6 @@ for STEP in "${!DIST[@]}"; do
 
 	echo "${DIST[$STEP]} $ENERGY_USUAL $TOTAL_ENERGY"  >> $DATA_FILE 
 
+	#rm lowdin.wfn
 done
 
