@@ -1,0 +1,4 @@
+## WARNING ## The scratch directory /scratch/LOWIN/p1
+              has been removed, probably it corresponds to
+              a calculation completed or with errors.
+mkdir: cannot create directory ‘/scratch/LOWIN/p1’: File exists

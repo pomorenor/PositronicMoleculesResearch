@@ -1,0 +1,101 @@
+
+&LowdinParameters
+	LowdinParameters_readCoefficients =F 
+	LowdinParameters_iterationScheme =0 
+	LowdinParameters_convergenceMethod =1 
+	LowdinParameters_scfNonElectronicTypeGuess ="ONES" 
+	LowdinParameters_units ="ANGS" 
+	LowdinParameters_ionizeSpecie ="POSITRON" 
+	LowdinParameters_IonizeMO =1 
+	LowdinParameters_ptJustOneOrbital =T 
+/
+
+&InputTasks
+	InputTasks_method = "UHF"
+	InputTasks_propagatorTheoryCorrection = 3
+/
+
+&InputParticle
+	InputParticle_name = "e-[F]"
+	InputParticle_basisSetName = "AUG-CC-PVTZ"
+	InputParticle_multiplicity = 1
+	InputParticle_addParticles = 2
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 3.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "e-[Cl]"
+	InputParticle_basisSetName = "AUG-CC-PVTZ"
+	InputParticle_origin = -2.140000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "e-[Li]"
+	InputParticle_basisSetName = "AUG-CC-PVTZ"
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "e-[Cl]"
+	InputParticle_basisSetName = "AUG-CC-PVTZ"
+	InputParticle_origin = 2.140000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "F"
+	InputParticle_basisSetName = "Dirac"
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 3.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "Cl"
+	InputParticle_basisSetName = "Dirac"
+	InputParticle_origin = -2.140000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "Li"
+	InputParticle_basisSetName = "Dirac"
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "Cl"
+	InputParticle_basisSetName = "Dirac"
+	InputParticle_origin = 2.140000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "E+"
+	InputParticle_basisSetName = "PSX-TZ"
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 3.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "E+"
+	InputParticle_basisSetName = "PSX-TZ"
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "E+"
+	InputParticle_basisSetName = "PSX-TZ"
+	InputParticle_origin = -2.140000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "E+"
+	InputParticle_basisSetName = "PSX-TZ"
+	InputParticle_addParticles = -3
+	InputParticle_origin = 2.140000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputSystem
+	InputSystem_numberOfParticles = 12
+	InputSystem_numberOfExternalPots =  0
+	InputSystem_numberOfInterPots =  0
+	InputSystem_numberOfLJCenters =  0
+	InputSystem_numberOfOutputs =  0
+	InputSystem_numberOfSpeciesInCI =  0
+
+/

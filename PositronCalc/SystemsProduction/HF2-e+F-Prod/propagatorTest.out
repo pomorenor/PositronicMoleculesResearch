@@ -1,0 +1,81 @@
+Begin job by input: propagatorTest.lowdin, for user:   at  jue 15 may 2025 14:30:03 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: 6a3709673387fd8573bee61a2c94c1c2ec4e2445
+  compilation date:  lun 07 abr 2025 11:57:06 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	e-(F)	AUG-CC-PVTZ 0.0 0.0 3.0  multiplicity=1 addParticles=2 
+	e-(F)	AUG-CC-PVTZ -1.1393 0.0 0.0
+	e-(H)	AUG-CC-PVTZ 0.0 0.0 0.0
+	e-(F)	AUG-CC-PVTZ 1.1393 0.0 0.0 
+	F	Dirac 0.0 0.0 3.0
+	F	Dirac -1.1393 0.0 0.0
+	H	Dirac 0.0 0.0 0.0
+	F	Dirac 1.1393 0.0 0.0
+	E+	PSX-TZ 0.0 0.0 3.0 
+	E+	PSX-TZ 0.0 0.0 0.0
+	E+	PSX-TZ -1.1393 0.0 0.0
+	E+	PSX-TZ 1.1393 0.0 0.0 addParticles=-3
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+	propagatorTheoryCorrection=3
+END TASKS
+
+CONTROL
+	readCoefficients=F
+	iterationScheme=0
+	convergenceMethod=1
+	scfNonElectronicTypeGuess="ONES"
+	units="ANGS"
+	ionizeSpecies="POSITRON"
+	IonizeMO=1
+	ptJustOneOrbital = T
+	mpFrozenCoreBoundary= T
+END CONTROL
+
+
+
+
+
+
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Thu May 15 14:30:03 2025
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT...Error reading LowdinParameters
+Invalid line : 	LowdinParameters_MPFROZENCOREBOUNDARY =T
+ 
+ ### ERROR ###
+    Debug description: check the CONTROL block in your input file
+    Description: Class object CONTROL in the load function
+ ###
+ 
+
+ Elapsed Time :   9.06E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Thu May 15 14:30:03 2025
+-rw-rw-r-- 1 pohl pohl  675 may 15 14:30 propagatorTest
+-rw-rw-r-- 1 pohl pohl 2,8K may 15 14:30 propagatorTest.aux
+-rw-rw-r-- 1 pohl pohl  685 may 15 14:30 propagatorTest.lowdin
+-rw-rw-r-- 1 pohl pohl 2,2K may 15 14:30 propagatorTest.out
+-rw-rw-r-- 1 pohl pohl 962K may 15 14:30 propagatorTest.vec

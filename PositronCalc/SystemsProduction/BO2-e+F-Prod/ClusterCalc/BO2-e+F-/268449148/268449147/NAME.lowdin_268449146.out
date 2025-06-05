@@ -1,0 +1,23 @@
+MESSAGE: Iniciando la copia de los Datos a procesar desde egeo-00:/homes/qteorica/rafael/BO2-e+F- a  nodo-01:/scratch/qteorica/rafael/268449146
+receiving incremental file list
+./
+NAME.lowdin_268449146.err
+              0 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=7/9)
+NAME.lowdin_268449146.out
+              0   0%    0.00kB/s    0:00:00              144 100%  140.62kB/s    0:00:00 (xfr#2, to-chk=6/9)
+p0.lowdin
+              0   0%    0.00kB/s    0:00:00              652 100%  636.72kB/s    0:00:00 (xfr#3, to-chk=5/9)
+p1.lowdin
+              0   0%    0.00kB/s    0:00:00              652 100%  636.72kB/s    0:00:00 (xfr#4, to-chk=4/9)
+p2.log
+              0   0%    0.00kB/s    0:00:00               58 100%   56.64kB/s    0:00:00 (xfr#5, to-chk=3/9)
+p2.lowdin
+              0   0%    0.00kB/s    0:00:00              651 100%  635.74kB/s    0:00:00 (xfr#6, to-chk=2/9)
+run.sh
+              0   0%    0.00kB/s    0:00:00              594 100%  580.08kB/s    0:00:00 (xfr#7, to-chk=1/9)
+script.sh
+              0   0%    0.00kB/s    0:00:00               90 100%   87.89kB/s    0:00:00 (xfr#8, to-chk=0/9)
+
+sent 179 bytes  received 3,467 bytes  7,292.00 bytes/sec
+total size is 2,841  speedup is 0.78
+MESSAGE: Terminada la copia de los Datos a procesar desde egeo-00:/homes/qteorica/rafael/BO2-e+F- a  nodo-01:/scratch/qteorica/rafael/268449146

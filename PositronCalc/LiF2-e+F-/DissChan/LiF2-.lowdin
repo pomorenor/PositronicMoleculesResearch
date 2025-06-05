@@ -8,7 +8,7 @@ GEOMETRY
 	F	Dirac 1.702 0.0 0.0
 	E+	PSX-TZ 0.0 0.0 0.0
 	E+	PSX-TZ -1.702 0.0 0.0
-	E+	PSX-TZ 1.702 0.0 0.0 addParticles=-3
+	E+	PSX-TZ 1.702 0.0 0.0 addParticles=-2
 END GEOMETRY
 
 TASKS

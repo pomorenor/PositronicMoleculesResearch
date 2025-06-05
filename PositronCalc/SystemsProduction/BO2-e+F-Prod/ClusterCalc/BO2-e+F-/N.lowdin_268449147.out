@@ -1,0 +1,57 @@
+MESSAGE: Iniciando la copia de los Datos a procesar desde egeo-00:/homes/qteorica/rafael/BO2-e+F- a  nodo-01:/scratch/qteorica/rafael/268449147
+receiving incremental file list
+./
+N.lowdin_268449147.err
+              0 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=11/13)
+N.lowdin_268449147.out
+              0   0%    0.00kB/s    0:00:00              144 100%  140.62kB/s    0:00:00 (xfr#2, to-chk=10/13)
+NAME.lowdin_268449146.err
+              0 100%    0.00kB/s    0:00:00 (xfr#3, to-chk=9/13)
+NAME.lowdin_268449146.out
+              0   0%    0.00kB/s    0:00:00            1,366 100%    1.30MB/s    0:00:00 (xfr#4, to-chk=8/13)
+p0.lowdin
+              0   0%    0.00kB/s    0:00:00              652 100%  636.72kB/s    0:00:00 (xfr#5, to-chk=7/13)
+p1.lowdin
+              0   0%    0.00kB/s    0:00:00              651 100%  635.74kB/s    0:00:00 (xfr#6, to-chk=6/13)
+p2.log
+              0   0%    0.00kB/s    0:00:00               58 100%   56.64kB/s    0:00:00 (xfr#7, to-chk=5/13)
+p2.lowdin
+              0   0%    0.00kB/s    0:00:00              651 100%  635.74kB/s    0:00:00 (xfr#8, to-chk=4/13)
+run.sh
+              0   0%    0.00kB/s    0:00:00              594 100%  580.08kB/s    0:00:00 (xfr#9, to-chk=3/13)
+run1.sh
+              0   0%    0.00kB/s    0:00:00              589 100%  575.20kB/s    0:00:00 (xfr#10, to-chk=2/13)
+script.sh
+              0   0%    0.00kB/s    0:00:00               90 100%   87.89kB/s    0:00:00 (xfr#11, to-chk=1/13)
+script1.sh
+              0   0%    0.00kB/s    0:00:00               90 100%   87.89kB/s    0:00:00 (xfr#12, to-chk=0/13)
+
+sent 255 bytes  received 5,807 bytes  12,124.00 bytes/sec
+total size is 4,885  speedup is 0.81
+MESSAGE: Terminada la copia de los Datos a procesar desde egeo-00:/homes/qteorica/rafael/BO2-e+F- a  nodo-01:/scratch/qteorica/rafael/268449147
+MESSAGE: Iniciando la copia de los datos procesados desde nodo-01:/scratch/qteorica/rafael/268449147
+sending incremental file list
+268449147/
+268449147/N.lowdin_268449147.err
+268449147/N.lowdin_268449147.out
+268449147/NAME.lowdin_268449146.err
+268449147/NAME.lowdin_268449146.out
+268449147/p0.lowdin
+268449147/p1.log
+268449147/p1.lowdin
+268449147/p2.log
+268449147/p2.lowdin
+268449147/run.sh
+268449147/run1.sh
+268449147/script.sh
+268449147/script1.sh
+
+sent 5,835 bytes  received 267 bytes  4,068.00 bytes/sec
+total size is 4,885  speedup is 0.80
+MESSAGE: Terminada  la copia de los datos procesados desde  nodo-01:/scratch/qteorica/rafael/268449147 a egeo-00:/homes/qteorica/rafael/BO2-e+F- 
+JobID         User   State    CPUTime Exit     MaxRSS        NodeList  Partition                   ReqTRES              Submit               Start                 End    Elapsed ConsumedEnergy 
+------------ ----- ------- ---------- ---- ---------- --------------- ---------- ------------------------- ------------------- ------------------- ------------------- ---------- -------------- 
+268449147    rafa+ CANCEL+   00:15:28  0:0                    nodo-01   cpu.cecc billing=32,cpu=32,mem=65+ 2025-05-26T15:09:06 2025-05-26T15:09:06 2025-05-26T15:09:35   00:00:29                
+268449147.b+       CANCEL+   00:15:28  0:0                    nodo-01                                      2025-05-26T15:09:06 2025-05-26T15:09:06 2025-05-26T15:09:35   00:00:29              0 
+268449147.e+       COMPLE+   00:15:28  0:0      3.08M         nodo-01                                      2025-05-26T15:09:06 2025-05-26T15:09:06 2025-05-26T15:09:35   00:00:29          0.02M 
+MESSAGE: Se elimino nodo-01:/scratch/qteorica/rafael/268449147

@@ -1,0 +1,58 @@
+MESSAGE: Iniciando la copia de los Datos a procesar desde egeo-00:/homes/qteorica/pomorenor/LiClCl1 a  nodo-01:/scratch/qteorica/pomorenor/268449203
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The ECDSA host key for egeo-00 has changed,
+and the key for the corresponding IP address 168.176.15.138
+is unchanged. This could either mean that
+DNS SPOOFING is happening or the IP address for the host
+and its host key have changed at the same time.
+Offending key for IP in /homes/qteorica/pomorenor/.ssh/known_hosts:8
+  remove with:
+  ssh-keygen -f "/homes/qteorica/pomorenor/.ssh/known_hosts" -R "168.176.15.138"
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:R32su3JsrIe2jxwuMHH0HLMlh4JNoO3n+0puccvnwYU.
+Please contact your system administrator.
+Add correct host key in /homes/qteorica/pomorenor/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /homes/qteorica/pomorenor/.ssh/known_hosts:1
+  remove with:
+  ssh-keygen -f "/homes/qteorica/pomorenor/.ssh/known_hosts" -R "egeo-00"
+ECDSA host key for egeo-00 has changed and you have requested strict checking.
+Host key verification failed.
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(228) [Receiver=3.2.3]
+MESSAGE: Iniciando la copia de los datos procesados desde nodo-01:/scratch/qteorica/pomorenor/268449203
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The ECDSA host key for egeo-00 has changed,
+and the key for the corresponding IP address 168.176.15.138
+is unchanged. This could either mean that
+DNS SPOOFING is happening or the IP address for the host
+and its host key have changed at the same time.
+Offending key for IP in /homes/qteorica/pomorenor/.ssh/known_hosts:8
+  remove with:
+  ssh-keygen -f "/homes/qteorica/pomorenor/.ssh/known_hosts" -R "168.176.15.138"
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:R32su3JsrIe2jxwuMHH0HLMlh4JNoO3n+0puccvnwYU.
+Please contact your system administrator.
+Add correct host key in /homes/qteorica/pomorenor/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /homes/qteorica/pomorenor/.ssh/known_hosts:1
+  remove with:
+  ssh-keygen -f "/homes/qteorica/pomorenor/.ssh/known_hosts" -R "egeo-00"
+ECDSA host key for egeo-00 has changed and you have requested strict checking.
+Host key verification failed.
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(228) [sender=3.2.3]

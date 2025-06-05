@@ -1,0 +1,35 @@
+
+GEOMETRY
+	e-(F)	AUG-CC-PVTZ 0.0 0.0 12.0  multiplicity=1 addParticles=2 
+	e-(H)	AUG-CC-PVTZ -1.759 0.0 0.0
+	e-(Li)	AUG-CC-PVTZ 0.0 0.0 0.0
+	e-(H)	AUG-CC-PVTZ 1.759 0.0 0.0 
+	F	Dirac 0.0 0.0 12.0
+	H	Dirac -1.759 0.0 0.0
+	Li	Dirac 0.0 0.0 0.0
+	H	Dirac 1.759 0.0 0.0
+	E+	PSX-TZ 0.0 0.0 12.0 
+	E+	PSX-TZ 0.0 0.0 0.0
+	E+	PSX-TZ -1.759 0.0 0.0
+	E+	PSX-TZ 1.759 0.0 0.0 addParticles=-3
+END GEOMETRY
+
+TASKS
+        method = "UHF"
+	mollerPlessetCorrection=2
+END TASKS
+
+CONTROL
+	readCoefficients=F
+	iterationScheme=0
+	convergenceMethod=1
+	scfNonElectronicTypeGuess="ONES"
+	units="ANGS"
+END CONTROL
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+#!/usr/bin/env bash     
+
+
+LC_NUMERIC="C"
+CALC_NAME=$1
+DATA_FILE=$2
+
+
+TEMPLATE="template_usual.lowdin"
+
+
+
+
+DIST=()
+
+for i in $(seq 1.5 0.5 20); do
+	DIST+=($i)
+done 
+
+STEP=0
+
+for STEP in "${!DIST[@]}"; do
+
+	echo -e "Step number $STEP \n"
+
+	GAUSSIAN_INPUT_FILE="$CALCNAME_$STEP.com"
+	GAUSSIAN_OUTPUT_FILE="$CALCNAME_$STEP.log"
+
+
+
+	sed "3s|POS|"${DIST[$STEP]}"|g" $TEMPLATE_USUAL_CALC > $LOWDIN_FILE_USUAL
+	
+
+
+	echo -e "Running LOWDIN calculations"
+
+	lowdinwork -i $LOWDIN_FILE_USUAL -n 20 
+	
+	echo -e "Extracting total Energy \n"
+	ENERGY_USUAL=$(awk '/E\(MP/ {print $3}' $LOWDIN_OUTPUT_USUAL)
+       	TOTAL_ENERGY=$(awk '/TOTAL ENERGY = / {print $4}' $LOWDIN_OUTPUT_USUAL)	
+	#echo -e "$ENERGY_ONLY_POSI \n"
+	echo -e "${DIST[$STEP]} \t $ENERGY_USUAL $TOTAL_ENERGY \n"
+
+	echo "${DIST[$STEP]} $ENERGY_USUAL $TOTAL_ENERGY"  >> $DATA_FILE 
+
+	#rm lowdin.wfn
+done
+

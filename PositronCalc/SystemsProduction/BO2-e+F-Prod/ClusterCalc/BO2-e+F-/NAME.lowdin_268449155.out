@@ -1,0 +1,57 @@
+MESSAGE: Iniciando la copia de los Datos a procesar desde egeo-00:/homes/qteorica/rafael/LiCl2-e+F- a  nodo-01:/scratch/qteorica/rafael/268449155
+receiving incremental file list
+./
+p1.lowdin
+              0   0%    0.00kB/s    0:00:00              657 100%  641.60kB/s    0:00:00 (xfr#1, to-chk=10/12)
+p2.lowdin
+              0   0%    0.00kB/s    0:00:00              656 100%  640.62kB/s    0:00:00 (xfr#2, to-chk=9/12)
+p3.lowdin
+              0   0%    0.00kB/s    0:00:00              656 100%  640.62kB/s    0:00:00 (xfr#3, to-chk=8/12)
+run.sh
+              0   0%    0.00kB/s    0:00:00              594 100%  580.08kB/s    0:00:00 (xfr#4, to-chk=7/12)
+run1.sh
+              0   0%    0.00kB/s    0:00:00              597 100%  583.01kB/s    0:00:00 (xfr#5, to-chk=6/12)
+run2.sh
+              0   0%    0.00kB/s    0:00:00              597 100%  583.01kB/s    0:00:00 (xfr#6, to-chk=5/12)
+run3.sh
+              0   0%    0.00kB/s    0:00:00              597 100%  583.01kB/s    0:00:00 (xfr#7, to-chk=4/12)
+script.sh
+              0   0%    0.00kB/s    0:00:00               90 100%   87.89kB/s    0:00:00 (xfr#8, to-chk=3/12)
+script1.sh
+              0   0%    0.00kB/s    0:00:00               90 100%   87.89kB/s    0:00:00 (xfr#9, to-chk=2/12)
+script2.sh
+              0   0%    0.00kB/s    0:00:00               90 100%   87.89kB/s    0:00:00 (xfr#10, to-chk=1/12)
+script3.sh
+              0   0%    0.00kB/s    0:00:00               90 100%   87.89kB/s    0:00:00 (xfr#11, to-chk=0/12)
+
+sent 236 bytes  received 5,518 bytes  3,836.00 bytes/sec
+total size is 4,714  speedup is 0.82
+MESSAGE: Terminada la copia de los Datos a procesar desde egeo-00:/homes/qteorica/rafael/LiCl2-e+F- a  nodo-01:/scratch/qteorica/rafael/268449155
+MESSAGE: Iniciando la copia de los datos procesados desde nodo-01:/scratch/qteorica/rafael/268449155
+sending incremental file list
+268449155/
+268449155/p1.aux
+268449155/p1.log
+268449155/p1.lowdin
+268449155/p1.out
+268449155/p1.vec
+268449155/p2.lowdin
+268449155/p3.lowdin
+268449155/run.sh
+268449155/run1.sh
+268449155/run2.sh
+268449155/run3.sh
+268449155/script.sh
+268449155/script1.sh
+268449155/script2.sh
+268449155/script3.sh
+
+sent 1,592,648 bytes  received 305 bytes  3,185,906.00 bytes/sec
+total size is 1,591,234  speedup is 1.00
+MESSAGE: Terminada  la copia de los datos procesados desde  nodo-01:/scratch/qteorica/rafael/268449155 a egeo-00:/homes/qteorica/rafael/LiCl2-e+F- 
+JobID         User   State    CPUTime Exit     MaxRSS        NodeList  Partition                   ReqTRES              Submit               Start                 End    Elapsed ConsumedEnergy 
+------------ ----- ------- ---------- ---- ---------- --------------- ---------- ------------------------- ------------------- ------------------- ------------------- ---------- -------------- 
+268449155    rafa+ RUNNING 24-22:16:32  0:0                    nodo-01   cpu.cecc billing=32,cpu=32,mem=65+ 2025-05-27T15:06:59 2025-05-27T15:07:00             Unknown   18:41:46                
+268449155.b+       RUNNING 24-22:16:32  0:0                    nodo-01                                      2025-05-27T15:07:00 2025-05-27T15:07:00             Unknown   18:41:46              0 
+268449155.e+       RUNNING 24-22:16:32  0:0                    nodo-01                                      2025-05-27T15:07:00 2025-05-27T15:07:00             Unknown   18:41:46              0 
+MESSAGE: Se elimino nodo-01:/scratch/qteorica/rafael/268449155
